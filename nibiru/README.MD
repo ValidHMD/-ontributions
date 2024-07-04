@@ -67,6 +67,7 @@ sudo systemctl enable nibid
 ```
 
 ### Download Snapshot
+```
 nibid tendermint unsafe-reset-all --home $HOME/.nibid --keep-addr-book 
 curl https://snapshots.ndnodes.com/snapshots/nibiru-mainnet/snapshot-nibiru-mainnet.ndnodes.lz4 | lz4 -dc - | tar -xf - -C $HOME/.nibid
 ```
